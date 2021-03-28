@@ -3,30 +3,7 @@ A quickstart project that quickly/easily bootstraps a testable/deployable Angula
 dev-time angular class(components, services, etc) libraries and run-time Angular element libraries.
 
 ---
-## Quickstart
-
-1.  Build the default library
-
-    $ `npm run build:weja-library`
-
-2.  Build the default library
-
-    $ `npm run build:weja-elements`
-
-3.  Open the index.html file found in the root of the project. If you get a message like the following:
----
-<h2 style="background-color: mintcream; text-align: center">
-    Your very own Angular custom web component says: Hello, world!
-</h2>
-
----
-...then congrats, you just built a static web component that you can proudly deploy anywhere and run anywhere! 
-
-Feel free to try [micro-realm](https://github.com/Micro-cosm/micro-realm) and just as quickly deploy to firebase and integrate to your enterprise GCP services.
-
-
-
-# Now, build your own from scratch using Angular CLI
+## Building your own from scratch using Angular CLI
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.5,  [README.scratch.md](./README.scratch.md) shares the steps to
 reproduce from scratch.
 
@@ -40,7 +17,7 @@ Inspired by -- Angular Elements: Create a Component Library for Angular and the 
 </p>
 
 ---
-<h2 style="color: steelblue;"> webpackJsonp Global Namespace Conflict Resolution </h2>
+<h3 style="color: steelblue;"> webpackJsonp Global Namespace Conflict Resolution </h3>
 <span style="font-size: x-small;"> source: https://medium.com/@sri1980/multiple-angular-elements-apps-loading-in-one-window-7bcc95887ff4</span>
 
 <p style="color: red">
@@ -96,7 +73,7 @@ and everything below should just work as expected
 
 
 ----
-<h2 style="color: steelblue;"> Publish an Angular component and Custom Elements from a unified Angular CLI project</h2>
+<h3 style="color: steelblue;"> Publish an Angular component along with Custom Elements from an Angular CLI mono-repository </h3>
 
 #####  Create the project			
   Initialize a new Angular application (include routing or any stylesheet)			

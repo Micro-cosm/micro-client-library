@@ -19,7 +19,7 @@ A project that bootstraps an Angular library that deploys both dev-time angular 
 </h2>
 
 ---
-...then congrats, you just built a static web component that you can proudly deploy anywhere and run anywhere! 
+...then congrats, you just built a static web component that you can proudly deploy anywhere and runs anywhere! 
 
 Feel free to try [micro-realm](https://github.com/Micro-cosm/micro-realm) and just as quickly deploy to firebase and integrate to your enterprise GCP services.
 

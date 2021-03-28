@@ -7,16 +7,8 @@
         "declaration": true,
         "declarationMap": true,
         "inlineSources": true,
-        "paths": {
-            "@angular/*": [
-                "./node_modules/@angular/*"
-            ]
-        },
         "types": [],
-        "lib": [
-            "dom",
-            "es2018"
-        ]
+        "lib": ["dom", "es2018"]
     },
     "angularCompilerOptions": {
         "skipTemplateCodegen": true,
