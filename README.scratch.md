@@ -39,20 +39,19 @@ which can be accomplished with the following steps:
 
    b.	Add customWebpackConfig property as below:		
 ```json
-    {   ...
-        "architect": {
-            "build": {
-                "builder": "@angular-builders/custom-webpack:browser",
-                    "options": {
-                        "customWebpackConfig": {
-                            "path": "./extra-webpack.config.js",
-                            "mergeStrategies": { "externals": "replace" }
-                    }
+{
+    "architect": {
+        "build": {
+            "builder": "@angular-builders/custom-webpack:browser",
+            "options": {
+                "customWebpackConfig": {
+                    "path": "./extra-webpack.config.js",
+                    "mergeStrategies": { "externals": "replace" }
                 }
             }
-        },
-        ...
+        }
     }
+}
 ```
 
 3.  a.	Create a config file `extra-webpack.config.js` in the project root folder.		
@@ -100,12 +99,11 @@ Optionally, publish your components as Custom Elements by creating package.json 
 
 Update the newly created package.json:
 ```json
-{   ...
+{
     "files": [
         "weja-elements.js",
         "styles.css"
-    ],
-    ...
+    ]
 }
 ```
 
@@ -168,18 +166,16 @@ Update `main.ts` to be similar to the following:
 Update the project root's `package.json` script dictionary:			
 
 ```json
-{   ...
+{
     "scripts": {
         "build:weja-elements":  "ng build --prod --project weja-elements --output-hashing none && npm run pack:weja-elements && cp projects/weja-elements/package.json dist/weja-elements",
         "pack:weja-elements":   "cat ./dist/weja-elements/{runtime,polyfills,main}.js > dist/weja-elements/weja-elements.js && ls -lah dist/weja-elements/weja-elements.js",
-        "build:weja-library":   "ng build --prod --project weja-library",
-        ...
-    },
-    ...
+        "build:weja-library":   "ng build --prod --project weja-library"
+    }
 }
 ```
 
-#### Build amd Deploy
+#### Build and Deploy
 
   $	`npm run build:weja-elements`
 
